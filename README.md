@@ -16,11 +16,11 @@ __Padding__: ISO-9796-2 Scheme 2
 ### Example usage: 
 verify signature from file:
 
-`java -jar -f verify -i signature.out -k publicKey.der -file`
- 
+`java -jar ISO9796SignerVerifier.jar -f verify -i signature.out -k publicKey.der -file`
+
 sign message to stdout
 
-`java -jar -f sign -i "this is the message" -k privateKey.der`
+`java -jar ISO9796SignerVerifier.jar -f sign -i "this is the message" -k privateKey.der`
 
 ### KEY GENERATION:
  
