@@ -4,7 +4,7 @@ Signing  BASE64 encoded plaintexts, writing the to files or stdout and verify th
 Wrapper for the ISO9796-2 bouncycastle (https://www.bouncycastle.org/) sign
 and verify functions for Message Recovery from signatures
 
-__ISO Standard__: http://www.sarm.am/docs/ISO_IEC_9796-2_2002(E)-Character_PDF_document.pdf 
+__ISO Standard__: [ISO_IEC_9796-2](http://www.sarm.am/docs/ISO_IEC_9796-2_2002(E)-Character_PDF_document.pdf)
 
 __Algorithm__: RSA 
 __Hash__: SHA-1 
