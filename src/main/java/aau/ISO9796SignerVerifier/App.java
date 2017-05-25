@@ -37,8 +37,8 @@ import org.bouncycastle.util.encoders.Base64;
  * 
  * ISO Standard: http://www.sarm.am/docs/ISO_IEC_9796-2_2002(E)-Character_PDF_document.pdf 
  * Algorithm: RSA 
- * Hash: SHA-1 Padding: 
- * ISO-9796-2 Scheme 2
+ * Hash: SHA-1 
+ * Padding: ISO-9796-2 Scheme 2
  * 
  * Example usage: 
  * verify signature from file:
