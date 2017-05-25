@@ -36,3 +36,7 @@ Output public key in DER format
 
 `openssl rsa -in private_key.pem -pubout -outform DER -out public_key.der`
 
+###TIPPS
+If you used the verification function you may have to decode the string that holds the signature:
+
+`Base64.decode(signature.getBytes())`
