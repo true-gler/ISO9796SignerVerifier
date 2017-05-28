@@ -109,11 +109,10 @@ public class App {
 		RSAEngine engine = new RSAEngine();
 		Digest digest = new SHA1Digest();
 
-		ISO9796d2Signer verifier = new ISO9796d2Signer(engine, digest, true);
 		RSAPublicKey publicKey = (RSAPublicKey) getPublic(publicKeyFilename);
 		BigInteger big = ((RSAKey) publicKey).getModulus();
 		RSAKeyParameters rsaPublic = new RSAKeyParameters(false, big, publicKey.getPublicExponent());
-		verifier = new ISO9796d2Signer(engine, digest, true);
+		ISO9796d2Signer verifier = new ISO9796d2Signer(engine, digest, true);
 		verifier.init(false, rsaPublic); // false for verify
 
 		if (!verifier.verifySignature(signature)) {
